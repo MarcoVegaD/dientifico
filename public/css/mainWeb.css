@@ -4,7 +4,8 @@
 
 */
 .container {
-  background-color: #f9f9f9;
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
   -webkit-box-shadow: 2px 2px 15px 1px #333333;
   box-shadow: 2px 2px 15px 1px #333333;
   padding: 0;
@@ -24,6 +25,12 @@
   background-color: #333333;
   color: #fff;
   padding: 10px 0;
+}
+
+.socialIcon {
+  margin: 0 3%;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 /*
@@ -87,7 +94,8 @@
 }
 
 .slide_3 {
-  background-color: red;
+  background-color: #f9f9f9;
+  margin-bottom: 1em;
 }
 
 .slide_3 h1 {
@@ -116,12 +124,47 @@
 
 .slide_4 .imgSlide4 {
   display: block;
-  height: 60vh;
+  height: 75vh;
   background-image: url("../imgs/slides/homeSlide4.jpg");
   background-position: center center;
   background-position-x: 40%;
   background-repeat: no-repeat;
   background-size: 175% 100%;
+}
+
+.slide_4 .testimonios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 50px;
+}
+
+.slide_4 .testimonios h3 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.slide_4 .testimonios .lineaCorte {
+  padding-top: 0;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 55%;
+  border: 2px solid #83d05f;
+}
+
+.slide_4 .testimonios .textoSlide4 {
+  font-style: italic;
+  line-height: 100%;
+  font-size: 2.2em;
+  text-align: justify;
 }
 
 /*

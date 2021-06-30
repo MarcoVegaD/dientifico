@@ -14,7 +14,11 @@ class HomeController extends Controller
         return view('about');
     }
 
+    public function servicios(){
+        return view('about');
+    }
+
     public function faq(){
-        return view('faq');
+        return view('about');
     }
 }

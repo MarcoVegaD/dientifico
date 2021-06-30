@@ -8,7 +8,7 @@
 
    <div class="row slide_2">
        <div class="col-7 ps-5">
-           <p class="textoSlide2">Tu salud mental<br>es <span>nuestro<br>compromiso</span></p>
+           <p class="textoSlide2">Tu salud dental<br>es <span>nuestro<br>compromiso</span></p>
             <div class="lineaCorte"></div>
            <p class="longTextSlide2">Porque sabemos lo importante que es lucir una sonrisa hermosa y sana, buscamos el mejor tratamiento para ti a precios justos.</p>
        </div>
@@ -19,7 +19,10 @@
 
    <div class="row slide_3">
        <h1 class="row">Servicios</h1>
-       <div class="row servicios">
+       <div class="row">
+           <img src="{{asset('imgs/slides/homeSlide3.jpg')}}" alt="Servicios" class="col-12">
+       </div>
+      {{--  <div class="row servicios">
            <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Cuidados preventivos</span></div>
            <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Restauración</span></div>
            <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Implantes y cirugía</span></div>
@@ -30,13 +33,19 @@
            <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Geriatría</span></div>
            <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Diagnóstico</span></div>
            <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Cosmética</span></div>
-       </div>
+       </div> --}}
    </div>
 
    <div class="row slide_4">
     <div class="col-5 imgSlide4"></div>
-    <div class="col-7">
-        
+    <div class="col-7 testimonios">
+        <h3 class="ps-2">Testimonios</h3>
+        <div class="lineaCorte"></div>
+        <p class="textoSlide4 ps-1">
+            "Excelente atención, mi hijo se sintió muy tranquilo en todo momento y nos explicó con mucho detalle todo el procedimiento."
+        </p>
+        <br><br>
+        <p class="textoSlide4 ps-1">"Son muy éticos y se preocupan mucho por sus pacientes."</p>
     </div>
 </div>
     

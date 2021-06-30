@@ -8,7 +8,8 @@ $grayColor: #333333;
 */
 
 .container {
-    background-color: #f9f9f9;
+    font-family: "Raleway", sans-serif;
+    background-color: #fff;
     -webkit-box-shadow: 2px 2px 15px 1px $grayColor;
     box-shadow: 2px 2px 15px 1px $grayColor;
     padding: 0;
@@ -28,6 +29,11 @@ $grayColor: #333333;
     background-color: $grayColor;
     color: #fff;
     padding: 10px 0;
+}
+
+.socialIcon {
+    margin: 0 3%;
+    filter: invert(100%);
 }
 
 /*
@@ -84,7 +90,9 @@ $grayColor: #333333;
 }
 
 .slide_3 {
-    background-color: red;
+    background-color: #f9f9f9;
+    //background-color: red;
+    margin-bottom: 1em;
 
     h1 {
         font-size: 3em;
@@ -108,12 +116,39 @@ $grayColor: #333333;
 .slide_4 {
     .imgSlide4 {
         display: block;
-        height: 60vh;
+        height: 75vh;
         background-image: url("../imgs/slides/homeSlide4.jpg");
         background-position: center center;
         background-position-x: 40%;
         background-repeat: no-repeat;
         background-size: 175% 100%;
+    }
+    .testimonios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 50px;
+
+        h3 {
+            font-size: 4em;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .lineaCorte {
+            padding-top: 0;
+            margin-top: 2%;
+            margin-bottom: 5%;
+            width: 55%;
+            border: 2px solid $greenColor;
+        }
+
+        .textoSlide4 {
+            font-style: italic;
+            line-height: 100%;
+            font-size: 2.2em;
+            text-align: justify;
+        }
     }
 }
 
