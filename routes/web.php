@@ -19,6 +19,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/conocenos', [HomeController::class, 'about'])->name('about');
 Route::get('/preguntas-frecuentes', [HomeController::class, 'faq'])->name('faq');
 Route::get('/servicios', [HomeController::class, 'servicios'])->name('servicios');
+
 Route::get('login', [HomeController::class, 'login'])->name('login');
+Route::post('login', [HomeController::class, 'loginPost']);
 
 Route::resource('pacientes', PacientesController::class)->middleware('auth');

@@ -36,6 +36,11 @@ $grayColor: #333333;
     filter: invert(100%);
 }
 
+.active {
+    font-weight: bold !important;
+    color: $greenColor !important;
+}
+
 /*
 
      === HOME ===
@@ -185,10 +190,6 @@ ul.navbar-nav {
 
 a.nav-link {
     color: gray;
-}
-
-a.active {
-    color: $greenColor;
 }
 
 .icon {

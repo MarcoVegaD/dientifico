@@ -21,4 +21,17 @@ class HomeController extends Controller
     public function faq(){
         return view('about');
     }
+
+    public function login(){
+        return view('login');
+    }
+
+    public function loginPost(Request $r){
+
+        $credentials = $r->validate([
+            'email' => ['required', 'email', 'string'],
+            'password' => ['required', 'string']
+        ]);
+
+    }
 }

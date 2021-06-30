@@ -15,13 +15,15 @@
             <div class="container-fluid">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link {{request()->is('/') ? 'active' : ''}}" href="{{route('home')}}">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link {{request()->is('about/*') ? 'active' : ''}}" href="{{route('about')}}">Conócenos</a></li>
-                    <li class="nav-item"><a class="nav-link {{request()->is('servicios/*') ? 'active' : ''}}" href="{{route('servicios')}}">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link {{request()->is('faq/*') ? 'active' : ''}}" href="{{route('faq')}}">Preguntas Frecuentes</a></li>
-                    <li class="nav-item"><a class="nav-link {{request()->is('login') ? 'active' : ''}}" href="{{route('home')}}">Login</a></li> 
+                    <li class="nav-item"><a class="nav-link {{request()->is('conocenos') ? 'active' : ''}}" href="{{route('about')}}">Conócenos</a></li>
+                    <li class="nav-item"><a class="nav-link {{request()->is('servicios') ? 'active' : ''}}" href="{{route('servicios')}}">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link {{request()->is('preguntas-frecuentes') ? 'active' : ''}}" href="{{route('faq')}}">Preguntas Frecuentes</a></li>
+                    @guest
+                    <li class="nav-item"><a class="nav-link {{request()->is('login') ? 'active' : ''}}" href="{{route('login')}}">Login</a></li> 
+                    @endguest
                     @auth
                     <li class="nav-item"><a class="nav-link {{request()->is('pacientes/*') ? 'active' : ''}}" href="{{route('home')}}">Pacientes</a></li> 
-                    <li class="nav-item"><a class="nav-link {{request()->is('logout') ? 'active' : ''}}" href="{{route('home')}}">Logout</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Logout</a></li> 
                     @endauth
                 </ul>
             </div>

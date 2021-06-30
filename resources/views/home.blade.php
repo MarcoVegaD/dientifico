@@ -22,18 +22,6 @@
        <div class="row">
            <img src="{{asset('imgs/slides/homeSlide3.jpg')}}" alt="Servicios" class="col-12">
        </div>
-      {{--  <div class="row servicios">
-           <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Cuidados preventivos</span></div>
-           <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Restauración</span></div>
-           <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Implantes y cirugía</span></div>
-           <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Ortodoncia</span></div>
-       </div>
-       <div class="row servicios">
-           <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Odontopediatría</span></div>
-           <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Geriatría</span></div>
-           <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Diagnóstico</span></div>
-           <div class="col-3"><img src="{{asset('imgs/icons/')}}" alt=""><span>Cosmética</span></div>
-       </div> --}}
    </div>
 
    <div class="row slide_4">

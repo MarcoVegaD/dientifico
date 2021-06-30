@@ -33,6 +33,11 @@
           filter: invert(100%);
 }
 
+.active {
+  font-weight: bold !important;
+  color: #83d05f !important;
+}
+
 /*
 
      === HOME ===
@@ -201,10 +206,6 @@ ul.navbar-nav li {
 
 a.nav-link {
   color: gray;
-}
-
-a.active {
-  color: #83d05f;
 }
 
 .icon {
