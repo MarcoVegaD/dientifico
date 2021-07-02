@@ -68,7 +68,7 @@ class HistoriaClinicaGeneralFactory extends Factory
             'medicacionDiabetes' => $this->faker->sentence,
             'tipoProblemaCardiaco' => $this->faker->sentence,
             'tipoAnticoagulantes' => $this->faker->sentence,
-            'tratamientoChagas' => $this->faker->sentence,
+            'tratamientoChagas' => $this->faker->boolean,
             'tipoHepatitis' => $this->faker->randomLetter,
             'tipoProblemaHepatico' => $this->faker->sentence,
             'medicamentoEpilepsia' => $this->faker->sentence,

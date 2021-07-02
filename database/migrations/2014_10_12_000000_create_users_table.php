@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('telefono', 10);
             $table->string('estadoCivil', 45);
             $table->string('domicilio')->nullable();
-            $table->string('email')->unique();
+            $table->string('email', 250)->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->default('$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
             $table->enum('rol', ['Paciente', 'Medico'])->default('Paciente');
