@@ -48,4 +48,42 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /* RELACIONES DE ELOQUENT */
+
+
+    public function tratamientos()
+    {
+        //CLASE - ID de la tabla a la que vas - ID local del modelo
+        return $this->hasMany(Tratamiento::class, 'idUsuario', 'id');
+    }
+
+    public function historiaClinicaGeneral()
+    {
+        return $this->hasOne(HistoriaClinicaGeneral::class, 'id', 'idHistoriaGeneral');
+    }
+
+    public function historiaClinicaOdontologica()
+    {
+        return $this->hasOne(HistoriaClinicaOdontologica::class, 'id', 'idHistoriaOdontologica');
+    }
+
+    public function relacionOdontograma()
+    {
+        return $this->hasMany(RelacionPacienteOdontograma::class, 'idUsuario', 'id');
+    }
+
+    /* 
+        CLASE FINAL - 
+        CLASE INTERMEDIA - 
+        Llave foranea en clase intermedia, relacionando con modelo actual - 
+        Llave foranea de la tabla final con intermedia - 
+        Llave del modelo actual con la intermedia - 
+        Llave local del modelo intermedio a relacionar con el final
+        */ 
+    public function odontogramas()
+    {
+        return $this->hasManyThrough(Odontograma::class, RelacionPacienteOdontograma::class, 'idUsuario', 'idDiagrama', 'id', 'idOdontograma');
+    }
+
 }
