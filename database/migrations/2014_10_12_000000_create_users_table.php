@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->default('$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
-            $table->enum('rol', ['Paciente', 'Medico'])->default('Medico');
+            $table->enum('rol', ['Paciente', 'Medico'])->default('Paciente');
             $table->rememberToken();
             $table->timestamps();
             $table->unsignedBigInteger('idHistoriaGeneral')->nullable()->references('id')->on('historiaClinicaGenerals');
