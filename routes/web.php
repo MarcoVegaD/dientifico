@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PacientesController;
+use App\Http\Controllers\HistoriaClinicaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,5 +23,20 @@ Route::get('/servicios', [HomeController::class, 'servicios'])->name('servicios'
 
 Route::get('login', [HomeController::class, 'login'])->name('login');
 Route::post('login', [HomeController::class, 'loginPost']);
+Route::post('logout', [HomeController::class, 'logout'])->name('logout');
 
-Route::resource('pacientes', PacientesController::class)->middleware('auth');
+Route::resource('pacientes', PacientesController::class)->middleware('auth')->names([
+    'index' => 'pacientes',
+    'show' => 'detallesPaciente',
+    'edit' => 'editarPaciente',
+    'destroy' => 'borrarPaciente',
+    'create' => 'agregarPaciente',
+    'store' => 'pacienteStore',
+    'update' => 'pacienteUpdate',
+]);
+
+Route::get('pacientes/{id}/historiaClinica', [HistoriaClinicaController::class, 'show'])->name('historiaClinicaShow');
+
+/* Route::resource('historiaClinica', HistoriaClinicaController::class)->middleware('auth')->names([
+    'index' => 'historiaClinica'
+]); */

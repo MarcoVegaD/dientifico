@@ -1,4 +1,4 @@
-<div class="row headTop">
+<div class="row headTop mt-4">
     <div class="col-2">222 587 0464</div>
     <div class="col-8">Servicio de emergencia 24/7</div>
     <div class="col-2">
@@ -22,8 +22,13 @@
                     <li class="nav-item"><a class="nav-link {{request()->is('login') ? 'active' : ''}}" href="{{route('login')}}">Login</a></li> 
                     @endguest
                     @auth
-                    <li class="nav-item"><a class="nav-link {{request()->is('pacientes/*') ? 'active' : ''}}" href="{{route('home')}}">Pacientes</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Logout</a></li> 
+                    <li class="nav-item"><a class="nav-link {{request()->is('pacientes*') ? 'active' : ''}}" href="{{route('pacientes')}}">Pacientes</a></li> 
+                    <li class="nav-item">
+                        <form action="{{route('logout')}}" method="POST" style="display: inline">
+                        @csrf
+                        <a class="nav-link" href="#" onclick="this.closest('form').submit()">Logout</a>
+                        </form>
+                    </li>
                     @endauth
                 </ul>
             </div>

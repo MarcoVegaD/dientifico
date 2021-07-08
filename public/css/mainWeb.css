@@ -104,6 +104,12 @@ a.nav-link {
   color: #333333;
 }
 
+.headNav {
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  border-bottom: 3px solid #83d05f;
+}
+
 /*
 
      === HOME ===
@@ -236,5 +242,27 @@ a.nav-link {
   line-height: 100%;
   font-size: 2.2em;
   text-align: justify;
+}
+
+/*
+
+     === Pacientes ===
+
+*/
+h1 {
+  font-weight: bold;
+  color: #333333;
+}
+
+.detallesPaciente div p {
+  margin-bottom: 1em;
+}
+
+.detallesPaciente div p span {
+  border-bottom: 2px solid #83d05f;
+}
+
+.detallesPaciente div p span:first-of-type {
+  font-weight: bold;
 }
 /*# sourceMappingURL=mainWeb.css.map */
