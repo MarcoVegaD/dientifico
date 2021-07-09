@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/lrjjxm0kdpb1/public_html/eanuab.com/
+    - /bin/cp -R * $DEPLOYPATH

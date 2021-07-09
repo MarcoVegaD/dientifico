@@ -265,4 +265,20 @@ h1 {
 .detallesPaciente div p span:first-of-type {
   font-weight: bold;
 }
+
+/*
+
+     === historiaClinica.show ===
+
+*/
+.historiaClinica div p {
+  font-weight: bold;
+  margin: 0.2em 0;
+  text-align: justify;
+}
+
+.historiaClinica div p span {
+  color: #83d05f;
+  text-shadow: 0px 1px 1px #333333;
+}
 /*# sourceMappingURL=mainWeb.css.map */

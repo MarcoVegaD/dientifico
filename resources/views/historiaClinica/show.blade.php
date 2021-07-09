@@ -10,7 +10,7 @@
         $odontograma = $historia['odontogramas'];
     @endphp
 
-    <div class="row my-3">
+    <div class="row my-3 historiaClinica">
         <h1 class="col-8 offset-2 text-center my-3">Historia Clínica</h1>
         <div class="col-5 offset-1">
             <h3 class="my-2 fw-bold">Historia General</h3>

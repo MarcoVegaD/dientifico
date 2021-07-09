@@ -241,3 +241,23 @@ h1 {
         }
     }
 }
+
+/*
+
+     === historiaClinica.show ===
+
+*/
+
+.historiaClinica {
+    div {
+        p {
+            font-weight: bold;
+            margin: 0.2em 0;
+            text-align: justify;
+            span {
+                color: $greenColor;
+                text-shadow: 0px 1px 1px $grayColor;
+            }
+        }
+    }
+}
