@@ -25,17 +25,22 @@ Route::get('login', [HomeController::class, 'login'])->name('login');
 Route::post('login', [HomeController::class, 'loginPost']);
 Route::post('logout', [HomeController::class, 'logout'])->name('logout');
 
-Route::resource('pacientes', PacientesController::class)->middleware('auth')->names([
-    'index' => 'pacientes',
-    'show' => 'detallesPaciente',
-    'edit' => 'editarPaciente',
-    'destroy' => 'borrarPaciente',
-    'create' => 'agregarPaciente',
-    'store' => 'pacienteStore',
-    'update' => 'pacienteUpdate',
-]);
+Route::middleware('auth')->group(function(){
 
-Route::get('pacientes/{id}/historiaClinica', [HistoriaClinicaController::class, 'show'])->name('historiaClinicaShow');
+    Route::resource('pacientes', PacientesController::class)->names([
+        'index' => 'pacientes',
+        'show' => 'detallesPaciente',
+        'edit' => 'editarPaciente',
+        'destroy' => 'borrarPaciente',
+        'create' => 'agregarPaciente',
+        'store' => 'pacienteStore',
+        'update' => 'pacienteUpdate',
+    ]);
+
+    Route::get('pacientes/{id}/historiaClinica', [HistoriaClinicaController::class, 'show'])->name('historiaClinicaShow');
+
+});
+
 
 /* Route::resource('historiaClinica', HistoriaClinicaController::class)->middleware('auth')->names([
     'index' => 'historiaClinica'
