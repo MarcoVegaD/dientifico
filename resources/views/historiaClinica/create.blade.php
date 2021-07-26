@@ -772,6 +772,8 @@
         e.preventDefault();
 
         var wrapper = document.getElementById('wrapperDientes');
+        var num = wrapper.childNodes.length;
+        console.log(num);
         var insideDiv = document.createElement('div');
         insideDiv.className = "my-2";
 
@@ -781,50 +783,60 @@
         diente.setAttribute('type', "number");
         diente.setAttribute('min', "11");
         diente.setAttribute('max', "85");
-        diente.setAttribute('name', "odontograma[idDiente][]");
+        diente.setAttribute('name', "odontograma[idDiente]["+num+"]");
         diente.className = "me-5"
         
         var carie = document.createElement('input');
         carie.setAttribute('type', "checkbox");
-        carie.setAttribute('name', "odontograma[carie][]");
+        carie.setAttribute('name', "odontograma[carie]["+num+"]");
         var carieLabel = document.createElement('label');
         carieLabel.className = "me-3 ms-1";
         carieLabel.innerText = "Carie";
 
         var restauracion = document.createElement('input');
         restauracion.setAttribute('type', "checkbox");
-        restauracion.setAttribute('name', "odontograma[restauracion][]");
+        restauracion.setAttribute('name', "odontograma[restauracion]["+num+"]");
         var restauracionLabel = document.createElement('label');
         restauracionLabel.className = "me-3 ms-1";
         restauracionLabel.innerText = "Restauración";
 
         var ausente = document.createElement('input');
         ausente.setAttribute('type', "checkbox");
-        ausente.setAttribute('name', "odontograma[ausente][]");
+        ausente.setAttribute('name', "odontograma[ausente]["+num+"]");
         var ausenteLabel = document.createElement('label');
         ausenteLabel.className = "me-3 ms-1";
         ausenteLabel.innerText = "Ausente";
 
         var protesisFija = document.createElement('input');
         protesisFija.setAttribute('type', "checkbox");
-        protesisFija.setAttribute('name', "odontograma[protesisFija][]");
+        protesisFija.setAttribute('name', "odontograma[protesisFija]["+num+"]");
         var protesisFijaLabel = document.createElement('label');
         protesisFijaLabel.className = "me-3 ms-1";
         protesisFijaLabel.innerText = "Protesis Fija";
 
         var protesisRemovible = document.createElement('input');
         protesisRemovible.setAttribute('type', "checkbox");
-        protesisRemovible.setAttribute('name', "odontograma[protesisRemovible][]");
+        protesisRemovible.setAttribute('name', "odontograma[protesisRemovible]["+num+"]");
         var protesisRemovibleLabel = document.createElement('label');
         protesisRemovibleLabel.className = "me-3 ms-1";
         protesisRemovibleLabel.innerText = "Protesis Removible";
 
         var corona = document.createElement('input');
         corona.setAttribute('type', "checkbox");
-        corona.setAttribute('name', "odontograma[corona][]");
+        corona.setAttribute('name', "odontograma[corona]["+num+"]");
         var coronaLabel = document.createElement('label');
         coronaLabel.className = "me-3 ms-1";
         coronaLabel.innerText = "Corona";
+
+        var notaDiente = document.createElement('textarea');
+        notaDiente.setAttribute('name', "odontograma[notaDiente]["+num+"]");
+        notaDiente.setAttribute('placeholder', 'Notas del diente');
+        notaDiente.setAttribute('rows', "1");
+        notaDiente.setAttribute('cols', "100");
+        notaDiente.className = "my-2";
+
+        var division = document.createElement('hr');
+
 
         wrapper.appendChild(insideDiv);
 
@@ -841,6 +853,8 @@
         insideDiv.appendChild(protesisRemovibleLabel);
         insideDiv.appendChild(corona);
         insideDiv.appendChild(coronaLabel);
+        insideDiv.appendChild(notaDiente);
+        insideDiv.appendChild(division);
     });
 
 </script>
