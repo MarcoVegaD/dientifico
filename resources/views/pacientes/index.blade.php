@@ -30,7 +30,7 @@
                             <a href="{{route('editarPaciente', $p->id)}}"  class="btn btn-warning">Editar</a>
                             <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Modal-{{$p->id}}">Borrar</button>
                             @unless ($p->idHistoriaGeneral && $p->idHistoriaOdontologica)
-                            <a href="{{route('detallesPaciente', $p->id)}}" class="btn btn-info">Añadir Historia Clínica</a>
+                            <a href="{{route('historiaClinicaCreate', $p->id)}}" class="btn btn-info">Añadir Historia Clínica</a>
                             @else
                             <a href="{{route('historiaClinicaShow', $p->id)}}" class="btn btn-info">Historia Clínica</a>
                             @endunless

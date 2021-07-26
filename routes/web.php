@@ -38,6 +38,8 @@ Route::middleware('auth')->group(function(){
     ]);
 
     Route::get('pacientes/{id}/historiaClinica', [HistoriaClinicaController::class, 'show'])->name('historiaClinicaShow');
+    Route::get('pacientes/{id}/historiaClinica/create', [HistoriaClinicaController::class, 'create'])->name('historiaClinicaCreate');
+    Route::post('pacientes/{id}/historiaClinica/create', [HistoriaClinicaController::class, 'store'])->name('historiaClinicaStore');
 
 });
 

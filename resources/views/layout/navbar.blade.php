@@ -8,8 +8,11 @@
 </div>
 
 <div class="row headNav my-2">
-    <img class="col-2 logo ms-3" src="{{asset('imgs/logoIcon.png')}}" alt="Dientifico Logo">
-    <img class="col-2 logo" src="{{asset('imgs/logoNombre.png')}}" alt="Dientifico Logo">
+    <a href="{{route('home')}}" class="col-4">
+        <img class="col-6 logo ms-3" src="{{asset('imgs/logoIcon.png')}}" alt="Dientifico Logo">
+        <img class="col-6 logo" src="{{asset('imgs/logoNombre.png')}}" alt="Dientifico Logo">
+    </a>
+    
     <div class="col-8">
         <nav class="navbar navbar-expand">
             <div class="container-fluid">
