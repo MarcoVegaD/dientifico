@@ -6,7 +6,7 @@
 
     <div class="row slide_1"></div>
 
-   <div class="row slide_2">
+   <div class="row slide_2 mt-md-5">
        <div class="col-7 ps-5">
            <p class="textoSlide2">Tu salud dental<br>es <span>nuestro<br>compromiso</span></p>
             <div class="lineaCorte"></div>
@@ -27,7 +27,7 @@
    <div class="row slide_4">
     <div class="col-5 imgSlide4"></div>
     <div class="col-7 testimonios">
-        <h3 class="ps-2">Testimonios</h3>
+        <h3 class="ps-2 display-3">Testimonios</h3>
         <div class="lineaCorte"></div>
         <p class="textoSlide4 ps-1">
             "Excelente atención, mi hijo se sintió muy tranquilo en todo momento y nos explicó con mucho detalle todo el procedimiento."

@@ -8,6 +8,7 @@ $grayColor: #333333;
 */
 html {
     font-family: "Raleway", sans-serif;
+    font-size: 1em;
 }
 
 a {
@@ -28,11 +29,19 @@ a {
     fill: currentColor;
 }
 
+svg {
+    margin-right: 0.5em;
+}
+
 /*
 
      === MAIN.BLADE ===
 
 */
+
+body {
+    background-color: #cdd0cb;
+}
 
 .container {
     background-color: #fff;
@@ -197,7 +206,7 @@ a.nav-link {
         padding-right: 50px;
 
         h3 {
-            font-size: 4em;
+            //font-size: 4em;
             font-weight: bold;
             margin-bottom: 0;
         }
@@ -255,8 +264,9 @@ h1 {
             margin: 0.2em 0;
             text-align: justify;
             span {
-                color: $greenColor;
-                text-shadow: 0px 1px 1px $grayColor;
+                font-weight: normal;
+                margin-left: 0.5em;
+                border-bottom: 2px solid $greenColor;
             }
         }
     }

@@ -27,7 +27,7 @@
        </div>
        <div class="col-5">
             <p class="row">
-                <span class="col-6">Apellidos(s):</span>
+                <span class="col-6">Apellido(s):</span>
                 <span class="col-6">{{$user->apellidos}}</span>
             </p>
             <p class="row">
